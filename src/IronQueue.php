@@ -281,4 +281,12 @@ class IronQueue extends Queue implements QueueContract
     {
         $this->request = $request;
     }
+    
+    /**
+     * @return  \Illuminate\Contracts\Encryption\Encrypter
+     */
+    public function getEncrypter()
+    {
+        return $this->encrypter;
+    }
 }
