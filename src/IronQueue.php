@@ -287,6 +287,6 @@ class IronQueue extends Queue implements QueueContract
      */
     public function getEncrypter()
     {
-        return $this->encrypter;
+        return $this->crypt;
     }
 }
